@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fill" >
+
+        <com.google.android.exoplayer2.ui.SubtitleView
+            android:id="@+id/exo_subtitles"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+</RelativeLayout>
